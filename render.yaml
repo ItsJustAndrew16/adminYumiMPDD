@@ -1,0 +1,6 @@
+services:
+  - type: worker
+    name: yumi-bot
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
