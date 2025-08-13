@@ -4,7 +4,9 @@ services:
     env: python
     plan: free
     buildCommand: |
-      apt-get update && apt-get install -y ffmpeg
+      apt-get update && apt-get install -y ffmpeg curl
+      curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+      . "$HOME/.cargo/env"
       pip install --upgrade pip
       pip install -r requirements.txt
     startCommand: python3 adminYumi.py
