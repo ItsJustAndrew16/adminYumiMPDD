@@ -4,7 +4,7 @@ services:
     env: python
     plan: free
     buildCommand: |
-      apt-get update && apt-get install -y ffmpeg libjpeg-dev zlib1g-dev
+      apt-get update && apt-get install -y ffmpeg
       pip install --upgrade pip
       pip install -r requirements.txt
     startCommand: python3 adminYumi.py
