@@ -1,0 +1,10 @@
+services:
+  - type: worker
+    name: yumi-bot
+    env: python
+    plan: free
+    buildCommand: |
+      apt-get update && apt-get install -y ffmpeg
+      pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: python3 adminYumi.py
