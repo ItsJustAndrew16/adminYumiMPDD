@@ -1,6 +1,4 @@
 aiogram==3.4.1
 pydantic==2.6.4
-pillow==9.5.0
+pillow==10.4.0
 ffmpeg-python==0.2.0
-Pillow==10.4.0
-
